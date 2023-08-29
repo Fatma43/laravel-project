@@ -1,0 +1,68 @@
+table{
+    width: 100%;
+
+    border-collapse: collapse;
+}
+table,
+th,
+tr,
+td{
+    border: 2px solid;
+    border-color: black;
+   font-family: Arial, Helvetica, sans-serif;
+}
+th{
+    background-color: rgb(56, 46, 169);
+    padding: 1rem;
+    color: white;
+    font-size: larger;
+}
+td{
+    padding: .8rem;
+    text-align: center;
+}
+
+.btn {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #546df5;
+    width: 65%;
+    border: 0;
+    height: 25px;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+
+  .add{
+    text-transform: uppercase;
+    outline: 0;
+    background: #0f2393;
+    width: 10%;
+    border: 0;
+    height: 45px;
+    text-decoration: solid;
+    color: #FFFFFF;
+    font-size: larger;
+    cursor: pointer;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  .pro{
+    text-transform: uppercase;
+    outline: 0;
+    background: #981903;
+    width: 10%;
+    border: 0;
+    height: 45px;
+    text-decoration: solid;
+    color: #FFFFFF;
+    font-size: larger;
+    cursor: pointer;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  .profile{
+
+    margin-left: 100;
+  }

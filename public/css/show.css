@@ -1,0 +1,31 @@
+body {
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background: linear-gradient(hsl(220, 90%, 66%),hsl(220, 90%, 66%) );
+  }
+  img{
+    max-width: 300px;
+    margin-left: 610px;
+    padding: 10px 20px;
+    height: 300px;
+    width: 700px;
+  }
+
+  p{
+    font-size: larger;
+    text-align: center;
+    color: white;
+  }
+
+  .back{
+    color: white;
+    background: hsl(250, 91%, 56%);
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 9%;
+    height: 40px;
+    margin-left: 700px;
+  }
