@@ -27,7 +27,7 @@ class UserController extends Controller
             return "Incorrect password..";
     }
 
-    
+
 
     public function add($id)
     {
@@ -66,10 +66,12 @@ class UserController extends Controller
             'password'=>'required',
             'gender'=>'required',
             ]);
-        $email=$_REQUEST['email'];
-        user::create($request->all());
-        $user=User::find($email);
-        return view('home',['products'=>$products, 'user'=>$user]);
+            user::create($request->all());
+            $email=$_REQUEST['email'];
+            $_SESSION["userid"]=User::whereEmail($email)->first()->id;
+            $user=User::find($_SESSION["userid"]);
+            $products=Product::get();
+            return view('home',['products'=>$products, 'user'=>$_SESSION["userid"]]);
      }
 
 

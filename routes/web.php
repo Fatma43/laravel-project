@@ -30,7 +30,7 @@ Route::get('/log', function () {
     return view('user.login');
 });
 
-Route::post('/check',[UserController::class,'check'] )->name('check');
+Route::post('login/check',[UserController::class,'check'] )->name('check');
 
 /////////////////////////signup/////////////////////////
 Route::get('/sign', function () {
@@ -53,5 +53,3 @@ Route::get('/home',[ProductController::class,'home'])->name('home');
 Route::get('/home/{id}',[UserController::class,'add'])->name('buy');
 
 Route::get('/user/show/{id}',[UserController::class,'usershow'])->name('usershow');
-
-

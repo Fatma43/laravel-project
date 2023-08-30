@@ -9,7 +9,7 @@
 </head>
 <body>
    <span> <p>Name:      {{$user->name}}</p></span>
-   <span> <p>Email:      {{$user->email}}</p></span>
+   <span> <p>Email:      {{$user->email}}</p></span><br>
    <div class="container">
     <div class="col-10 mx-auto p-4 border mb-5">
         <table class="table">
@@ -18,7 +18,6 @@
                     <th scope="col">Order ID</th>
                     <th scope="col">Product</th>
                     <th scope="col">Price</th>
-                    <th scope="col">Quantity</th>
                     <th scope="col">Delete</th>
                 </tr>
             </thead>
@@ -28,7 +27,6 @@
        <td>{{$order->id}}</td>
        <td>{{$order->product_name}}</td>
        <td>{{$order->price}}$</td>
-       <td>{{$order->quantity}}</td>
        <td>
         <form action="{{route('deleteorder',$order->id)}}" method="post">
             @method('DELETE')

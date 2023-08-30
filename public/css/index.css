@@ -66,3 +66,21 @@ td{
 
     margin-left: 100;
   }
+
+
+  .back{
+    color: white;
+    background: hsl(250, 91%, 56%);
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 9%;
+    height: 40px;
+    margin-left: 700px;
+  }
+
+  p{
+    font-size: larger;
+
+  }

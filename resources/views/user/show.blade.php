@@ -13,7 +13,10 @@
     <p>{{$product->product_name}}</p>
     <p>{{$product->product_price}}$</p>
     <p>{{$product->product_availability}}</p><br>
-    <br><br><br>
+    <br><br>
+    <form action="{{route('buy',$product->id)}}">
+        <button class="back" type='submit'>Buy</button>
+    </form><br>
    <form action="{{route('home')}}">
         <button class="back" type='submit'>Back</button>
     </form>
